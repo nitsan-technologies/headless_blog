@@ -13,6 +13,7 @@ $EM_CONF['ns_headless_blog'] = [
         'depends' => [
             'typo3' => '11.5.0-12.5.99',
             'frontend' => '12.0.0-12.5.99',
+            'headless' =>  '4.0.0-4.5.9',
             'blog' => '12.0.0-12.5.99'
         ],
         'conflicts' => [],
