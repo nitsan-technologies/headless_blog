@@ -1,7 +1,7 @@
 plugin.tx_blog{
     view {
-        partialRootPaths = EXT:ns_headless_blog/Resources/Private/Blog/Partials/
-        templateRootPaths = EXT:ns_headless_blog/Resources/Private/Blog/Templates/
+        partialRootPaths = EXT:headless_blog/Resources/Private/Blog/Partials/
+        templateRootPaths = EXT:headless_blog/Resources/Private/Blog/Templates/
     }
     settings.lists.pagination.insertAbove = 1
     settings.lists.pagination.itemsPerPage = 10

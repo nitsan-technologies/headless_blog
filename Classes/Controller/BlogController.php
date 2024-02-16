@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace NITSAN\NsHeadlessBlog\Controller;
+namespace Friendsoftypo3\HeadlessBlog\Controller;
 
-use NITSAN\NsHeadlessBlog\Pagination\BlogPager;
+use Friendsoftypo3\HeadlessBlog\Pagination\BlogPager;
 use TYPO3\CMS\Extbase\Pagination\QueryResultPaginator;
 use TYPO3\CMS\Extbase\Persistence\QueryResultInterface;
 use T3G\AgencyPack\Blog\Controller\PostController;
@@ -167,7 +167,7 @@ class BlogController extends PostController
     protected function getPaginationItems(QueryResultInterface $objects, int $currentPage = 1): ?BlogPager
     {
         $maximumNumberOfLinks = (int) ($this->settings['lists']['pagination']['maximumNumberOfLinks'] ?? 0);
-        $itemsPerPage = (int) ($this->settings['lists']['pagination']['headlessLimit'] ?? 10);
+        $itemsPerPage = (int) ($this->settings['lists']['pagination']['itemsPerPage'] ?? 10);
         $paginator = new QueryResultPaginator($objects, $currentPage, $itemsPerPage);
         return new BlogPager($paginator, $maximumNumberOfLinks, $currentPage);
     }

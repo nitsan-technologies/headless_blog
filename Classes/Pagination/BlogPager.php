@@ -8,7 +8,7 @@ declare(strict_types = 1);
  * LICENSE file that was distributed with this source code.
  */
 
-namespace NITSAN\NsHeadlessBlog\Pagination;
+namespace Friendsoftypo3\HeadlessBlog\Pagination;
 
 use TYPO3\CMS\Core\Pagination\PaginationInterface;
 use TYPO3\CMS\Core\Pagination\PaginatorInterface;

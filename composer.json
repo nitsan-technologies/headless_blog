@@ -1,5 +1,5 @@
 {
-    "name": "nitsan/ns-headless-blog",
+    "name": "friendsoftypo3/headless_blog",
     "type": "typo3-cms-extension",
     "description": "",
     "authors": [],
@@ -13,16 +13,16 @@
     },
     "autoload": {
         "psr-4": {
-            "NITSAN\\NsHeadlessBlog\\": "Classes"
+            "Friendsoftypo3\\HeadlessBlog\\": "Classes"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "NITSAN\\NsHeadlessBlog\\Tests\\": "Tests"
+            "Friendsoftypo3\\HeadlessBlog\\Tests\\": "Tests"
         }
     },
     "replace": {
-        "typo3-ter/ns-headless-blog": "self.version"
+        "typo3-ter/headless-blog": "self.version"
     },
     "config": {
         "vendor-dir": ".Build/vendor",
@@ -36,7 +36,7 @@
     "extra": {
         "typo3/cms": {
             "web-dir": ".Build/public",
-            "extension-key": "ns_headless_blog"
+            "extension-key": "headless_blog"
         }
     }
 }

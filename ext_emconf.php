@@ -1,7 +1,7 @@
 <?php
 
-$EM_CONF['ns_headless_blog'] = [
-    'title' => 'Ns Headless Blog',
+$EM_CONF['headless_blog'] = [
+    'title' => 'Headless Blog',
     'description' => 'This extension provides integration with blog to output content from TYPO3 in JSON format.',
     'category' => 'plugin',
     'author' => '',
